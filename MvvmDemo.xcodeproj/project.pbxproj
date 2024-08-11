@@ -13,6 +13,10 @@
 		CFDC7A362C5FCB9400C51F35 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CFDC7A352C5FCB9400C51F35 /* Base */; };
 		CFDC7A382C5FCB9500C51F35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFDC7A372C5FCB9500C51F35 /* Assets.xcassets */; };
 		CFDC7A3B2C5FCB9500C51F35 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CFDC7A3A2C5FCB9500C51F35 /* Base */; };
+		CFDC7A6A2C67BBAF00C51F35 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC7A692C67BBAF00C51F35 /* Person.swift */; };
+		CFDC7A6C2C67BBE800C51F35 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC7A6B2C67BBE800C51F35 /* Gender.swift */; };
+		CFDC7A6E2C67BCD200C51F35 /* PersonFollowingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC7A6D2C67BCD200C51F35 /* PersonFollowingTableViewCell.swift */; };
+		CFDC7A712C67BED700C51F35 /* PersonFollowingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDC7A702C67BED700C51F35 /* PersonFollowingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		CFDC7A372C5FCB9500C51F35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFDC7A3A2C5FCB9500C51F35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFDC7A3C2C5FCB9500C51F35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFDC7A692C67BBAF00C51F35 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		CFDC7A6B2C67BBE800C51F35 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		CFDC7A6D2C67BCD200C51F35 /* PersonFollowingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonFollowingTableViewCell.swift; sourceTree = "<group>"; };
+		CFDC7A702C67BED700C51F35 /* PersonFollowingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonFollowingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		CFDC7A2D2C5FCB9400C51F35 /* MvvmDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CFDC7A6F2C67BEA300C51F35 /* viewmodel */,
+				CFDC7A682C67B7D400C51F35 /* model */,
+				CFDC7A672C67B7CE00C51F35 /* controller */,
+				CFDC7A662C67B7C600C51F35 /* view */,
 				CFDC7A2E2C5FCB9400C51F35 /* AppDelegate.swift */,
 				CFDC7A302C5FCB9400C51F35 /* SceneDelegate.swift */,
-				CFDC7A322C5FCB9400C51F35 /* ViewController.swift */,
 				CFDC7A342C5FCB9400C51F35 /* Main.storyboard */,
 				CFDC7A372C5FCB9500C51F35 /* Assets.xcassets */,
 				CFDC7A392C5FCB9500C51F35 /* LaunchScreen.storyboard */,
 				CFDC7A3C2C5FCB9500C51F35 /* Info.plist */,
 			);
 			path = MvvmDemo;
+			sourceTree = "<group>";
+		};
+		CFDC7A662C67B7C600C51F35 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CFDC7A6D2C67BCD200C51F35 /* PersonFollowingTableViewCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		CFDC7A672C67B7CE00C51F35 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				CFDC7A322C5FCB9400C51F35 /* ViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		CFDC7A682C67B7D400C51F35 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CFDC7A692C67BBAF00C51F35 /* Person.swift */,
+				CFDC7A6B2C67BBE800C51F35 /* Gender.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		CFDC7A6F2C67BEA300C51F35 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				CFDC7A702C67BED700C51F35 /* PersonFollowingViewModel.swift */,
+			);
+			path = viewmodel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFDC7A6E2C67BCD200C51F35 /* PersonFollowingTableViewCell.swift in Sources */,
 				CFDC7A332C5FCB9400C51F35 /* ViewController.swift in Sources */,
+				CFDC7A6C2C67BBE800C51F35 /* Gender.swift in Sources */,
+				CFDC7A712C67BED700C51F35 /* PersonFollowingViewModel.swift in Sources */,
 				CFDC7A2F2C5FCB9400C51F35 /* AppDelegate.swift in Sources */,
+				CFDC7A6A2C67BBAF00C51F35 /* Person.swift in Sources */,
 				CFDC7A312C5FCB9400C51F35 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
